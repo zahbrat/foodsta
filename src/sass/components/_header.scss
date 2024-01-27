@@ -1,0 +1,36 @@
+.header {
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__ul {
+    display: flex;
+    gap: 28px;
+    list-style-type: none;
+  }
+
+  &__link {
+    transition: 0.5s;
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      text-decoration: underline;
+      color: $btn-green;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.promo {
+  margin-top: 95px;
+
+  .container {
+    display: flex;
+  }
+
+  &__text {
+    width: 502.417px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .swiper {
+    width: 528px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 48px;
+    background-color: $white;
+    border-radius: 4px;
+    color: #2c2c2c;
+    -webkit-box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.75);
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 40px;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    border: 26px solid $yellow;
+    border-radius: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 28px;
+  }
+}
