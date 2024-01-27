@@ -1,2 +1,21 @@
 @import './common';
 @import './example';
+
+//base
+
+@import './base/fonts';
+@import './base/general';
+@import './base/reset';
+@import './base/normalize';
+
+//utils
+
+@import './utils/colors';
+@import './utils/mixins';
+@import './utils/placeholder';
+@import './utils/variables';
+
+//companents
+
+@import './components/footer';
+@import './components/offer';
