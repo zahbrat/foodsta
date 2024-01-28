@@ -1,6 +1,4 @@
 // npm libraries
-@import '~node_modules/modern-normalize/modern-normalize.css';
-@import '~node_modules/swiper/swiper-bundle.css';
 
 // custom files
 @import './utils/variables';
@@ -8,4 +6,4 @@
 
 @import './components/header';
 @import './components/promo';
-@import './components/_offer.scss'
+@import './components/_offer.scss';
