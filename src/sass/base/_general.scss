@@ -7,6 +7,12 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   padding: 0 15px;
   max-width: 100%;
@@ -16,6 +22,9 @@ ul {
     padding: 0;
   }
   @media (min-width: 1200px) {
-    max-width: 1248px;
+    max-width: 1370px;
   }
+}
+.container {
+  height: 100%;
 }
