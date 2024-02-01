@@ -1,32 +1,35 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
-      <img class="footer__logo" src="./icons/logo.svg" alt="logo" />
-      <div class="footer__menu">
-        <a href="#" class="footer__link">Home</a>
-        <a href="#" class="footer__link">About</a>
-        <a href="#" class="footer__link">Service</a>
-        <a href="#" class="footer__link">Menu</a>
-        <a href="#" class="footer__link">Contact</a>
+      <div class="footer__wrapper--nav">
+        <img class="footer__logo" src="./icons/logo.svg" alt="logo" />
+        <div class="footer__menu">
+          <a href="#" class="footer__link">Home</a>
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Service</a>
+          <a href="#" class="footer__link">Menu</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
       </div>
-      <div class="footer__wrapper--input">
-        <h4 class="footer__subtitle">Subscribe</h4>
+      <form class="footer__wrapper--input">
+        <label for="email" class="footer__subtitle">Subscribe</label>
         <div class="footer__wrapper--btn">
-          <div class="footer__box">
+          <!-- <div class="footer__box"> -->
             <input
-              type="text"
+              type="email"
+              id="email"
               class="footer__input"
               placeholder="Enter your email"
+              required
             />
-          </div>
+          <!-- </div> -->
           <button class="footer__btn">Subscribe</button>
         </div>
-
-        <p class="footer__text">
-          By subscribing you agree to with our
-          <a href="#" class="footer__link--privacy">Privacy Policy</a>
-        </p>
-      </div>
+      </form>
+      <p class="footer__text">
+        By subscribing you agree to with our
+        <a href="#" class="footer__link--privacy">Privacy Policy</a>
+      </p>
     </div>
     <div class="footer__wrapper--terms">
       <div class="footer__box--service">
