@@ -1,6 +1,18 @@
 * {
+  color: black;
   border: none;
   font-size: 16px;
+  text-decoration: none;
+}
+
+::selection{
+  background-color: $dark-green;
+  color:white;
+  display:none;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .container {
