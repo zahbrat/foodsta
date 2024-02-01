@@ -1,0 +1,15 @@
+.food {
+  padding: 60px 20px;
+  &__food {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: $black;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: $black;
+  }
+}
