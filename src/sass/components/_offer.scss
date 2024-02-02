@@ -1,5 +1,8 @@
 .offer {
-  background-color: $yellow;
+  background-image: url(../images/wallpaper.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 100% 100%;
 
   .container {
     display: flex;
@@ -59,8 +62,11 @@
     background: #fff;
     padding: 10px 22px;
 
-    &:hover{
+    &:hover {
       border-color: #597d00;
+      transition: 2s, ease-in-out, 1s;
+      background-color: $dark-green;
+      color: #fff;
     }
   }
 
