@@ -1,21 +1,21 @@
 .footer {
-  padding-top: 80px;
-  background: $white;
+  background-image: url(../images/fruits-mobile1x.png);
+  padding-top: 64px;
+  background-size: 100% 100%;
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+  @media (min-width: 768px) {
+    background-image: url(../images/fruits-tablet1x.png);
+    padding-top: 80px;
+  }
+  @media (min-width: 1200px) {
+    background-image: url(../images/Fruits-dekstop1x.png);
+  }
   &__link {
-    color: $black;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @extend %text;
     text-decoration: none;
     &--privacy {
+      @extend %text;
       color: $dark-green;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
       text-decoration-line: underline;
     }
     &--settings {
@@ -38,18 +38,15 @@
     font-weight: 500;
     line-height: 150%; /* 21px */
     padding-top: 40px;
+    padding-bottom: 12px;
     margin-top: 0;
     margin-bottom: 13px;
     @media (min-width: 1200px) {
-      padding: 0;
+      padding-top: 0;
     }
   }
   &__input {
-    color: $dark-black;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
+    @extend %text;
     line-height: 150%;
     height: 42px;
     border-radius: 30px;
@@ -57,14 +54,16 @@
     background: $white;
     padding: 12px 61.5px 12px 12px;
     width: 279px;
-
-    &--service {
-      display: flex;
-      gap: 35px;
-      justify-content: center;
+  }
+  &__box {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    padding-top: 60px;
+    @media (min-width: 768px) {
+      padding-top: 0;
     }
   }
-
   &__btn {
     height: 42px;
     border-radius: 30px;
@@ -73,15 +72,17 @@
     padding: 11px 22px;
     margin-left: 162px;
     margin-top: 20px;
+    @media (min-width: 768px) {
+      margin: 0;
+    }
   }
   &__wrapper {
-
     &--terms {
-      // padding-top: 45px;
       @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         padding-top: 100px;
+        padding-bottom: 31px;
       }
     }
     &--btn {
@@ -99,20 +100,23 @@
     &--nav {
       display: flex;
       align-items: start;
-      gap: 81px;
+      gap: 80px;
 
       @media (min-width: 768px) {
         align-items: center;
+        gap: 150px;
+      }
+    }
+    &--input {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      @media (min-width: 768px) {
+        padding-bottom: 0;
       }
     }
   }
   &__text {
-    color: $black;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @extend %text;
     &--rights {
       color: $black;
       font-family: Roboto;
