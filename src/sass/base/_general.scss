@@ -1,0 +1,29 @@
+body {
+  font-family: 'Roboto';
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 16px;
+  max-width: 100%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1247px;
+  }
+}
+.container {
+  height: 100%;
+}
