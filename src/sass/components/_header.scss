@@ -10,14 +10,16 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    gap: calc(100% - 102px);
   }
 
   &__menu {
-    display: flex;
     display: none;
     gap: 30px;
     align-items: center;
+
+    @media (min-width:700px) {
+      display: flex;
+    }
   }
 
   &__ul {
@@ -38,9 +40,12 @@
   }
 
   &__hamburger {
-    // display: none;
     background: transparent;
     cursor: pointer;
+
+    @media (min-width:700px) {
+      display: none;
+    }
   }
 
   &-popup {
