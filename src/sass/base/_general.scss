@@ -1,15 +1,23 @@
 body {
-    font-family: Roboto;
-  }
+  font-family: Roboto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 .container {
-    max-width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-    @media (min-width: 768px) {
-        padding: 32px;
-    }
-    @media (min-width: 1280px) {
-        padding: 0 16px;
-    }
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
+  @media (min-width: 1280px) {
+    padding: 0 16px;
+  }
 }
