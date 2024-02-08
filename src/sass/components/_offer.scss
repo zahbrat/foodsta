@@ -1,0 +1,47 @@
+.offer {
+  background-color: $yellow;
+  display: flex;
+  &__title {
+    color: $black;
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 50.4px */
+  }
+  &__subtext {
+    color: var(--Black, #2c2c2c);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  &__descr {
+    color: var(--Black, #2c2c2c);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+  }
+  &__text {
+    color: var(--Black, #2c2c2c);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+  &__btn {
+    border-radius: 30px;
+    border: 2px solid $dark-green;
+    background: #fff;
+    padding: 10px 22px;
+  }
+  &__wallpaper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
