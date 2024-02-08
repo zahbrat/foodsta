@@ -7,10 +7,10 @@ const swiper = new Swiper('.swiper', {
       enabled: true,
     },
   
-    // autoplay: {
-    //   delay: 1000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
   
     navigation: {
       nextEl: '.swiper-button-next',
