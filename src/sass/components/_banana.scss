@@ -2,24 +2,55 @@
   padding: 46px 0 36px;
   &__title {
     font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 0;
     font-size: 28px;
     line-height: 120%;
     color: $black;
     @media (min-width: 768px) {
-        font-size: 42px;
+      font-size: 42px;
     }
   }
   &__subtitle {
+    margin: 0;
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;
+    // line-height: 150%;
     color: $black;
     @media (min-width: 768px) {
-        font-size: 16px;
+      font-size: 16px;
     }
   }
   &__wrapper {
     display: flex;
     gap: 32px;
+    align-items: end;
+    flex-direction: column;
+    &--input {
+      margin-top: 40px;
+      border: 0.8541666269302368px solid $yellow-main;
+      border-radius: 30px;
+      padding: 10px;
+      width: 279px;
+      height: 42px;
+      background: $base;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: $textInput;
+      outline: none;
+    }
+    &--btn {
+      border-radius: 30px;
+      padding: 10px 20px;
+      width: 103px;
+      height: 42px;
+      background: $button-green;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 150%;
+      color: $black;
+      border: none;
+    }
   }
 }
