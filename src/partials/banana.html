@@ -1,5 +1,33 @@
 <section class="banana">
   <div class="container">
+    <picture>
+        <source
+        srcset="
+        ./src/images/banana/banana_desktop1x.png 1x,
+        ./src/images/banana/banana_desktop2x.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+        ./src/images/banana/banana_tablet1x.png 1x,
+        ./src/images/banana/banana_tablet2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+        ./src/images/banana/banana_mobile1x.png 1x,
+        ./src/images/banana/banana_mobile2x.png 2x
+        "
+        media="(min-width:320px)"
+      />
+        <img
+        class="banana__img"
+        src="./src/images/banana/banana_desktop1x.png"
+        alt="banana"
+      />
+      </picture>
     <h1 class="banana__title">Subscribe To Get Special Offers</h1>
     <h2 class="banana__subtitle">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
