@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
 .container {
   width: 100%;
-  padding: 10px 20px;
+  // padding: 10px 20px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ body{
   /* 19.5px */
 
   &:hover {
-    background: #B5FF00;
+    background: #b5ff00;
   }
 }
 

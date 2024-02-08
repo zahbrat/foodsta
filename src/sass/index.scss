@@ -1,9 +1,6 @@
 // npm libraries
 
 // custom files
-@import './utils/variables';
+@import './utils/_variables';
 @import './utils/_base.scss';
-
-@import './components/header';
-@import './components/promo';
 @import './components/_offer.scss';
