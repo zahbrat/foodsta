@@ -29,36 +29,42 @@
     justify-content: center;
     align-items: center;
     &:hover {
-      transition: 1s border ease-in ;
+      transition: 1s border ease-in;
       border: 11px solid $button-green;
     }
     &:nth-child(4) {
       display: none;
-      @media (min-width: 620px) {
+      @media (min-width: 768px) {
         display: flex;
       }
     }
     &:nth-child(5) {
       display: none;
-      @media (min-width: 620px) {
+      @media (min-width: 768px) {
         display: flex;
       }
     }
     &:nth-child(6) {
       display: none;
-      @media (min-width: 620px) {
+      @media (min-width: 768px) {
         display: flex;
       }
     }
     @media (min-width: 1280px) {
-      width: 395px;
-      height: 397px;
+      width: 394px;
+      height: 396px;
+      border: 16px solid $yellow-main;
+      border-radius: 197px;
     }
   }
   &__img {
     border-radius: 116px;
     width: 223px;
     height: 223px;
+    @media (min-width: 1280px) {
+      width: 315px;
+      height: 315px;
+    }
   }
   &__list {
     display: flex;
