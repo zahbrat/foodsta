@@ -1,5 +1,6 @@
 .banana {
   padding: 46px 0 36px;
+  position: relative;
   &__title {
     font-weight: 700;
     margin-bottom: 20px;
@@ -10,6 +11,10 @@
     @media (min-width: 768px) {
       font-size: 42px;
     }
+  }
+  &__img {
+    position: absolute;
+    top: -35px;
   }
   &__subtitle {
     margin: 0;
@@ -33,12 +38,21 @@
       padding: 10px;
       width: 279px;
       height: 42px;
-      background: $base;
+      background: $white;
       font-weight: 400;
       font-size: 12px;
       line-height: 150%;
       color: $textInput;
       outline: none;
+      &:valid {
+        border: 0.85px solid $dark-green;
+      }
+      &:invalid {
+        border: 0.85px solid $invalid;
+        .invalid__text {
+          opacity: 1;
+        }
+      }
     }
     &--btn {
       border-radius: 30px;

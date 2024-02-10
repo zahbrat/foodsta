@@ -1,10 +1,12 @@
+//utils
+@import "./utils/colors";
+
 //base
 @import "./base/general";
 @import "./base/fonts";
 @import "./base/normalize";
 
-//utils
-@import "./utils/colors";
+
 
 //components
 @import "./components/banana";
