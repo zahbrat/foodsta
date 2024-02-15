@@ -59,6 +59,7 @@
   }
   &__input {
     @extend %text;
+    outline: none;
     line-height: 150%;
     height: 42px;
     border-radius: 30px;
@@ -67,10 +68,11 @@
     padding: 12px 61.5px 12px 12px;
     width: 279px;
     &:invalid {
-      &::before {
-        content: '';
-        color: $error;
-      }
+      border: 1px solid $error;
+      // &::before {
+      //   content: '';
+      //   color: $error;
+      // }
     }
     &:valid {
       &::after {
