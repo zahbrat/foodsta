@@ -15,6 +15,15 @@
   &__img {
     position: absolute;
     top: -35px;
+    @media (min-width: 768px) {
+      top: -85px;
+      right: 30px;
+    }
+    @media (min-width: 1280px) {
+      width: 608px;
+      height: 266px;
+    }
+    // @media (min-width: 1280px)
   }
   &__subtitle {
     margin: 0;
@@ -28,11 +37,19 @@
   }
   &__wrapper {
     display: flex;
-    gap: 32px;
     align-items: end;
     flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 22px;
+    }
+    @media (min-width: 1280px) {
+      gap: 32px;
+    }
     &--input {
       margin-top: 40px;
+      margin-bottom: 5px;
       border: 0.8541666269302368px solid $yellow-main;
       border-radius: 30px;
       padding: 10px;
@@ -44,14 +61,19 @@
       line-height: 150%;
       color: $textInput;
       outline: none;
-      &:valid {
-        border: 0.85px solid $dark-green;
+      @media (min-width: 768px) {
+        width: 394px;
+        height: 42px;
+        margin-top: 24px;
       }
+      // &:valid {
+      //   border: 0.85px solid $dark-green;
+      // }
       &:invalid {
         border: 0.85px solid $invalid;
-        .invalid__text {
-          opacity: 1;
-        }
+        // .invalid__text {
+        //   opacity: 1;
+        // }
       }
     }
     &--btn {
@@ -65,6 +87,7 @@
       line-height: 150%;
       color: $black;
       border: none;
+      margin-top: 15px;
     }
   }
 }
