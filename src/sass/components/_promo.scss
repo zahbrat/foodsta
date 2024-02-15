@@ -12,6 +12,7 @@
 
     @media (min-width:1280px) {
       justify-content: space-between;
+      flex-direction: row;
     }
   }
 
@@ -80,7 +81,7 @@
     }
 
     @media (min-width:1280px) {
-      position: static;
+      position: relative;
       width: 608px;
     }
 
