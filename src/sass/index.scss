@@ -16,15 +16,13 @@
 
 //companents
 
+@import './components/header';
+@import './components/promo';
 @import './components/footer';
 @import './components/offer';
-//base
-
-
-//components
 @import "./components/banana";
 @import "./components/food";
-
+@import './components/modal';
 
 
 @import './base/common';
@@ -32,6 +30,3 @@
 // custom files
 @import './utils/variables';
 @import './utils/_base.scss';
-
-@import './components/header';
-@import './components/promo'
