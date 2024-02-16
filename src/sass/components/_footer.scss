@@ -68,17 +68,10 @@
     padding: 12px 61.5px 12px 12px;
     width: 279px;
     &:invalid {
-      border: 1px solid $error;
-      // &::before {
-      //   content: '';
-      //   color: $error;
-      // }
+      border: 0.854px solid $error;
     }
     &:valid {
-      &::after {
-        content: '';
-        color: $dark-green;
-      }
+      border: 0.854px $btn-green;
     }
   }
   &__box {
