@@ -1,13 +1,18 @@
 .footer {
   background-image: url(../images/fruits-mobile1x.png);
   padding-top: 64px;
-  background-size: 100% 100%;
+  padding-bottom: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
   @media (min-width: 768px) {
     background-image: url(../images/fruits-tablet1x.png);
     padding-top: 80px;
   }
   @media (min-width: 1200px) {
+    padding: 100px 0;
+    height: 395px;
     background-image: url(../images/Fruits-dekstop1x.png);
   }
   &__link {
@@ -49,10 +54,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 21px */
-    padding-top: 40px;
+
     padding-bottom: 12px;
-    margin-top: 0;
-    margin-bottom: 13px;
+
     @media (min-width: 1200px) {
       padding-top: 0;
     }
@@ -92,6 +96,7 @@
     padding: 11px 22px;
     margin-left: 162px;
     margin-top: 20px;
+
     @media (min-width: 768px) {
       margin: 0;
     }
@@ -103,24 +108,37 @@
     }
   }
   &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      align-items: start;
+    }
     &--terms {
       @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        padding-top: 100px;
+        margin-top: 100px;
         padding-bottom: 31px;
+      }
+      @media (min-width: 1200px) {
+        margin-top: 80px;
+        padding: 0;
       }
     }
     &--btn {
+      margin-top: 12px;
       @media (min-width: 768px) {
         display: flex;
         gap: 13px;
       }
     }
-    justify-content: space-around;
-    flex-direction: row;
+
     @media (min-width: 1200px) {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
     &--nav {
@@ -134,14 +152,19 @@
       }
     }
     &--input {
-      padding-top: 40px;
+      max-width: 320px;
+      margin-top: 40px;
       padding-bottom: 20px;
       @media (min-width: 768px) {
         padding-bottom: 0;
       }
+      @media (min-width: 1200px) {
+       margin: 0;
+      }
     }
   }
   &__text {
+    margin-top: 20px;
     @extend %text;
     &--rights {
       color: $black;
@@ -187,7 +210,6 @@
     }
   }
   &__logo {
-    margin-bottom: -16px;
     @media (min-width: 1200px) {
       margin-bottom: 0;
     }
