@@ -6,16 +6,42 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    @media (min-width:1000px) {
-      justify-content: center;
+    @media (min-width:768px) {
+      position: relative;
     }
+
+    @media (min-width:1280px) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
 
     @media (min-width:768px) {
-      align-items: center;
+      width: 537px;
+      font-size: 42px;
     }
 
-    @media (min-width:600px) {
-      flex-direction: row;
+    @media (min-width:1280px) {
+      font-size: 48px;
+      width: auto;
+    }
+  }
+
+  &__p {
+    font-size: 14px;
+    line-height: 1.5;
+
+    @media (min-width:768px) {
+      width: 336px;
+      font-size: 16px;
+    }
+
+    @media (min-width:1280px) {
+      width: auto;
     }
   }
 
@@ -26,37 +52,37 @@
     align-items: start;
     justify-content: center;
 
-    @media (min-width:1000px) {
+    @media (min-width:768px) {
       order: 1;
     }
 
-    @media (min-width:768px) {
-      width: 502.417px;
-    }
-
-    @media (min-width:600px) {
-      width: 50%;
+    @media (min-width:1280px) {
+      width: 502px;
       order: 1;
     }
   }
 
   .swiper {
+    margin: 0;
     order: 1;
     display: none;
     top: 0;
     width: 320px;
     height: min-content;
-    position: relative;
+    // position: relative;
     margin-bottom: 15px;
 
-    @media (min-width:600px) {
+    @media (min-width:768px) {
       display: block;
-      width: 528px;
-      top: 125px;
+      position: absolute;
+      right: 23px;
+      top: 105px;
+      width: 336px;
     }
 
-    @media (min-width:1000px) {
-      top: 0px;
+    @media (min-width:1280px) {
+      position: relative;
+      width: 608px;
     }
 
   }
@@ -77,7 +103,7 @@
       color: $dark-green;
     }
 
-    @media (min-width:1000px) {
+    @media (min-width:1280px) {
       width: 40px;
       height: 48px;
     }
@@ -92,23 +118,23 @@
   }
 
   .swiper-slide img {
-    width: 100%;
+    // width: 100%;
     border: 14px solid $yellow;
     border-radius: 100%;
 
-    @media (min-width:1000px) {
+    @media (min-width:1280px) {
       border-width: 16px;
     }
   }
 
-  h1 {
-    margin: 0;
-    margin-bottom: 28px;
-  }
+  // &__title {
+  //   margin: 0;
+  //   margin-bottom: 28px;
+  // }
 
   .swiper-button-prev:after,
   .swiper-button-next:after {
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: 500;
   }
 }
