@@ -6,9 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px 0 0 0;
   @media (min-width: 768px) {
     background-image: url(../images/laptopBG.png);
-    height: 560px;
+    padding: 60px 0 120px;
   }
   @media (min-width: 1280px) {
     background-image: url(../images/desktopBG.png);
@@ -54,6 +55,7 @@
       color: var(--black);
     }
   }
+
   &__text {
     font-family: var(--font-family);
     font-weight: 700;
@@ -81,6 +83,9 @@
     color: var(--black);
   }
   &__windows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     // padding-left: 20px;
     @media (min-width: 360px) {
       padding-left: 25px;
@@ -89,6 +94,8 @@
       display: flex;
       gap: 32px;
       padding-left: 0px;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
   &__window-one {

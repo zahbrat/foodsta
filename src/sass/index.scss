@@ -1,3 +1,11 @@
+// npm libraries
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/swiper/swiper-bundle.css';
+
+// custom files
+@import './utils/variables';
+@import './utils/_base.scss';
+
 
 
 //base
@@ -16,12 +24,23 @@
 
 //companents
 
+@import './components/header';
+@import './components/promo';
 @import './components/footer';
 @import './components/offer';
-//base
-
-
-//components
 @import "./components/banana";
 @import "./components/food";
+@import './components/modal';
+
+
+@import './base/common';
+
+// custom files
+/* @import './utils/variables';
+@import './utils// npm libraries
+
+// custom files
+@import './utils/_variables';
+@import './utils/_base.scss';
+@import './components/_offer.scss'; */
 @import "./components/review";
