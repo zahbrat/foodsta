@@ -1,47 +1,82 @@
 .offer {
   background-color: $yellow;
-  display: flex;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
   &__title {
     color: $black;
     font-family: Roboto;
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 50.4px */
+    line-height: 120%;
+    margin-bottom: 20px;
+    /* 50.4px */
   }
+
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
   &__subtext {
     color: var(--Black, #2c2c2c);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
   }
-  &__descr {
+
+  &__text {
     color: var(--Black, #2c2c2c);
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 25.2px */
+    line-height: 140%;
+    /* 25.2px */
   }
-  &__text {
+
+  &__desc {
     color: var(--Black, #2c2c2c);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 21px */
+    line-height: 150%;
+    /* 21px */
   }
+
   &__btn {
+    cursor: pointer;
+    margin-top: 40px;
     border-radius: 30px;
     border: 2px solid $dark-green;
     background: #fff;
     padding: 10px 22px;
+
+    &:hover{
+      border-color: #597d00;
+    }
   }
+
   &__wallpaper {
     position: absolute;
     left: 50%;
     top: 50%;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    gap: 67px;
+  }
+
+  &__text {
+    margin-left: 40px;
   }
 }
