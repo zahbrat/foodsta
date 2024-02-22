@@ -18,8 +18,13 @@
     "url": "https://github.com/zahbrat/foodsta/issues"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "caniuse-lite": "^1.0.30001580",
     "caniuse-lite": "^1.0.30001580",
     "modern-normalize": "^1.1.0",
+    "parsel": "^0.3.0",
+    "reset-css": "^5.0.2",
+    "swiper": "^11.0.5",
     "parsel": "^0.3.0",
     "reset-css": "^5.0.2",
     "swiper": "^11.0.5"
