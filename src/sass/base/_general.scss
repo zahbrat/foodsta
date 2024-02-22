@@ -68,3 +68,24 @@ a {
     max-width: 1280px;
   }
 }
+body {
+  font-family: 'Roboto';
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 738px;
+    padding: 0;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}

@@ -104,4 +104,48 @@ h1 {
   font-weight: 700;
   line-height: 120%;
   /* 57.6px */
+}* {
+  border: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  // padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 30px;
+  background: $btn-green;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 6px 18px;
+  height: 32px;
+  /* 19.5px */
+
+  &:hover {
+    background: #b5ff00;
+  }
+}
+
+h1 {
+  color: $black;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 57.6px */
 }
