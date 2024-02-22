@@ -1,50 +1,50 @@
 <section class="banana">
-  <div class="container">
-    <picture>
+    <div class="container">
+      <picture>
+          <source
+          srcset="
+          ./images/banana/banana_desktop1x.png 1x,
+          ./images/banana/banana_desktop2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
         <source
-        srcset="
-        ./images/banana/banana_desktop1x.png 1x,
-        ./images/banana/banana_desktop2x.png 2x
-        "
-        media="(min-width:1280px)"
-      />
-      <source
-        srcset="
-        ./images/banana/banana_tablet1x.png 1x,
-        ./images/banana/banana_tablet2x.png 2x
-        "
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="
-        ./images/banana/banana_mobile1x.png 1x,
-        ./images/banana/banana_mobile2x.png 2x
-        "
-        media="(min-width:320px)"
-      />
-        <img
-        class="banana__img"
-        src="./images/banana/banana_desktop1x.png"
-        alt="banana"
-      />
-      </picture>
-    <div class="banana__container">
-      <h2 class="banana__title">Subscribe To Get Special Offers</h2>
-    <h3 class="banana__subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </h3>
-    <div class="banana__wrapper">
-      <input
-        class="banana__wrapper--input"
-        placeholder="Enter your email"
-        type="email"
-        name="email"
-        minlength="3"
-      />
-      <!-- <span class="invalid__text">Not a valid email address (example@email.com)</span> -->
-      <button class="banana__wrapper--btn">Subscribe</button>
+          srcset="
+          ./images/banana/banana_tablet1x.png 1x,
+          ./images/banana/banana_tablet2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+          ./images/banana/banana_mobile1x.png 1x,
+          ./images/banana/banana_mobile2x.png 2x
+          "
+          media="(min-width:320px)"
+        />
+          <img
+          class="banana__img"
+          src="./images/banana/banana_desktop1x.png"
+          alt="banana"
+        />
+        </picture>
+      <div class="banana__container">
+        <h2 class="banana__title">Subscribe To Get Special Offers</h2>
+      <h3 class="banana__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </h3>
+      <div class="banana__wrapper">
+        <input
+          class="banana__wrapper--input"
+          placeholder="Enter your email"
+          type="email"
+          name="email"
+          minlength="3"
+        />
+        <!-- <span class="invalid__text">Not a valid email address (example@email.com)</span> -->
+        <button class="banana__wrapper--btn">Subscribe</button>
+      </div>
+      </div>
     </div>
-    </div>
-  </div>
-</section>
+  </section>

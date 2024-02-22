@@ -1,6 +1,9 @@
 .banana {
   padding: 46px 0 36px;
   position: relative;
+  @media (min-width: 768px) {
+    padding: 72px 0 100px;
+  }
   .container {
     display: flex;
     flex-direction: row;
@@ -19,12 +22,11 @@
     flex-direction: column;
     align-items: center;
     max-width: 280px;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       display: block;
       max-width: 656px;
     }
-    @media (min-width:1280px) {
-
+    @media (min-width: 1280px) {
       width: 656px;
     }
   }
@@ -41,20 +43,19 @@
   }
   &__img {
     position: absolute;
-    top: -75px;
+    top: -50px;
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 768px) {
-      left: 0;
       transform: translateX(0);
-      right: 30px;
-      top: -125px;
+      right: 0;
+      top: -75px;
     }
     @media (min-width: 1280px) {
       width: 608px;
       height: 266px;
       left: 625px;
-      top: -60px;
+      top: -90px;
     }
   }
   &__subtitle {
@@ -65,7 +66,6 @@
     color: $black;
     @media (min-width: 768px) {
       font-size: 16px;
-
     }
   }
   &__wrapper {
@@ -81,7 +81,7 @@
       gap: 32px;
     }
     // @media (min-width: 400px) and (max-width: 767px) {
-    //   align-items: end;    
+    //   align-items: end;
     // }
     &--input {
       margin-top: 40px;
