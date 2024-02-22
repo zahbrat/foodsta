@@ -1,6 +1,48 @@
 // npm libraries
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/swiper/swiper-bundle.css';
+
+// custom files
+@import './utils/variables';
+@import './utils/_base.scss';
+
+@import './components/header';
+@import './components/promo';
+@import './components/_offer.scss';
+
+
+//base
+
+@import './base/fonts';
+@import './base/general';
+@import './base/reset';
+@import './base/normalize';
+
+//utils
+
+@import './utils/colors';
+@import './utils/mixins';
+@import './utils/placeholder';
+@import './utils/variables';
+
+//companents
+
+@import './components/header';
+@import './components/promo';
+@import './components/footer';
+@import './components/offer';
+@import "./components/banana";
+@import "./components/food";
+@import './components/modal';
+
+
+@import './base/common';
+
+// custom files
+/* @import './utils/variables';
+@import './utils// npm libraries
 
 // custom files
 @import './utils/_variables';
 @import './utils/_base.scss';
-@import './components/_offer.scss';
+@import './components/_offer.scss'; */
