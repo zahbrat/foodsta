@@ -2,6 +2,9 @@
   padding: 46px 0 36px;
   position: relative;
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media (min-width: 768px) {
       max-width: 704px;
     }
@@ -62,7 +65,7 @@
       gap: 32px;
     }
     @media (min-width: 400px) and (max-width: 767px) {
-      align-items: center;    
+      align-items: end;    
     }
     &--input {
       margin-top: 40px;
@@ -83,9 +86,9 @@
         height: 42px;
         margin-top: 24px;
       }
-      @media (min-width: 400px) and (max-width: 767px) {
-        width: 65%;
-      }
+      // @media (min-width: 400px) and (max-width: 767px) {
+      //   width: 65%;
+      // }
       // &:valid {
       //   border: 0.85px solid $dark-green;
       // }
