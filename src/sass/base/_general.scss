@@ -1,4 +1,49 @@
 body {
+  font-family: 'Roboto';
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 738px;
+    padding: 0;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1248px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+// container
+.container {
+  height: 100%;
+}
+
+body {
   font-family: Roboto;
 }
 
