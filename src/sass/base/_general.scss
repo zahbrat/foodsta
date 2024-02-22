@@ -56,36 +56,44 @@ a {
 }
 
 .container {
+  position: relative;
   max-width: 100%;
   padding: 20px;
   margin: 0 auto;
   @media (min-width: 768px) {
     padding: 32px;
-    max-width: 1280px;
+    width: 768px;
   }
   @media (min-width: 1280px) {
     padding: 0 16px;
-    max-width: 1280px;
+    width: 1280px;
   }
-}
-body {
-  font-family: 'Roboto';
 }
 
-ul {
-  padding: 0;
-  list-style: none;
+.example {
+  height: 200px;
 }
 
-.container {
-  padding: 0 15px;
-  max-width: 100%;
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    max-width: 738px;
-    padding: 0;
-  }
-  @media (min-width: 1280px) {
-    max-width: 1280px;
-  }
-}
+// .invalid__text {
+//   position: relative;
+//   opacity: 0;
+//   width: 232px;
+//   height: 15px;
+//   font-weight: 400;
+//   font-size: 10px;
+//   line-height: 150%;
+//   color: $invalid;
+//   // top: -25px;
+//   left: -27px;
+// }
+// .invalid__text::before {
+//   content: "";
+//   background-image: url(../images/banana/error.svg);
+//   background-size: 12px 12px;
+//   background-repeat: no-repeat;
+//   display: block;
+//   width: 12px;
+//   height: 12px;
+//   position: absolute;
+//   left: -15px;
+// }
