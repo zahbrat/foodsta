@@ -5,7 +5,8 @@
   "homepage": "https://zahbrat.github.io/foodsta",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /foodsta/"
+    "build": "parcel build src/*.html --public-url /foodsta/",
+    "deploy": "parcel build src/*.html --public-url /foodsta/ && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
