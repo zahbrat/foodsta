@@ -1,0 +1,2 @@
+var modal=document.querySelector(".modal"),btn=document.querySelectorAll(".modal__btn"),closeBtn=document.querySelector(".modal__close");btn.forEach((function(e){e.addEventListener("click",(function(){modal.style.opacity="1",modal.style.pointerEvents="all"}))})),closeBtn.addEventListener("click",(function(){modal.style.opacity="0",modal.style.pointerEvents="none"}));
+//# sourceMappingURL=index.b5eca8e1.js.map
