@@ -59,6 +59,9 @@
     font-weight: 700;
     font-size: 16px;
     color: var(--black);
+    @media (min-width: 1280px) {
+      padding-top: 20px;
+    }
   }
   &__man-img {
     width: 49px;
@@ -108,8 +111,7 @@
     }
   }
   &__window-one-wrapper {
-    padding-left: 8px;
-    padding-top: 8px;
+    padding: 12px;
   }
   &__window-two {
     margin-top: 32px;
@@ -128,19 +130,21 @@
     }
   }
   &__window-two-wrapper {
-    padding-left: 8px;
-    padding-top: 8px;
+    padding: 12px;
   }
   &__people-comm {
     width: 170px;
     height: 52px;
     padding-right: 15px;
-    border-right: 1px solid green;
+    border-right: 1px solid greenyellow;
     display: flex;
     align-items: center;
     gap: 15px;
     margin: 0;
     padding: 0;
+    @media (min-width: 768px) {
+      margin-top: 40px;
+    }
   }
   &__people-infos {
     margin-bottom: 15px;
