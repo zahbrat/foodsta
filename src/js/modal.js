@@ -1,13 +1,17 @@
-var modal = document.querySelector('.modal');
+const modal = document.querySelector('.modal');
+const btn = document.querySelectorAll('.modal__btn');
+const closeBtn = document.querySelector('.modal__close');
 
-document.querySelector('.promo__btn').onclick = function () {
-  modal.style.display = 'block';
-};
-document.querySelector('.modal__close').onclick = function () {
-  modal.style.display = 'none';
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-};
+btn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    modal.style.opacity = '1';
+    modal.style. pointerEvents = "all"
+  })
+})
+
+closeBtn.addEventListener('click', () => {
+  modal.style.opacity = '0';
+  modal.style. pointerEvents = "none"
+})
+
+

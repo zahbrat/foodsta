@@ -6,11 +6,11 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       position: relative;
     }
 
-    @media (min-width:1280px) {
+    @media (min-width: 1280px) {
       justify-content: space-between;
       flex-direction: row;
     }
@@ -20,12 +20,12 @@
     font-size: 28px;
     font-weight: 700;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       width: 537px;
       font-size: 42px;
     }
 
-    @media (min-width:1280px) {
+    @media (min-width: 1280px) {
       font-size: 48px;
       width: auto;
     }
@@ -35,13 +35,17 @@
     font-size: 14px;
     line-height: 1.5;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       width: 336px;
       font-size: 16px;
+      margin-top: 44px;
     }
 
-    @media (min-width:1280px) {
+
+    @media (min-width: 1280px) {
       width: auto;
+      margin-top: 28px;
+
     }
   }
 
@@ -52,11 +56,11 @@
     align-items: start;
     justify-content: center;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       order: 1;
     }
 
-    @media (min-width:1280px) {
+    @media (min-width: 1280px) {
       width: 502px;
       order: 1;
     }
@@ -72,19 +76,18 @@
     // position: relative;
     margin-bottom: 15px;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       display: block;
       position: absolute;
-      right: 23px;
-      top: 105px;
+      right: 2%;
+      top: 60px;
       width: 336px;
     }
 
-    @media (min-width:1280px) {
+    @media (min-width: 1280px) {
       position: relative;
       width: 608px;
     }
-
   }
 
   .swiper-button-prev,
@@ -103,7 +106,7 @@
       color: $dark-green;
     }
 
-    @media (min-width:1280px) {
+    @media (min-width: 1280px) {
       width: 40px;
       height: 48px;
     }
@@ -121,8 +124,8 @@
     // width: 100%;
     border: 14px solid $yellow;
     border-radius: 100%;
-
-    @media (min-width:1280px) {
+    width: 100%;
+    @media (min-width: 1280px) {
       border-width: 16px;
     }
   }
